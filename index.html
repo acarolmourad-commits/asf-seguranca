@@ -3,67 +3,87 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ASF Segurança — ASF</title>
-<meta name="description" content="Segurança no mar, etiqueta no pico e primeiros socorros">
+<title>ASF Segurança — Segurança no mar e etiqueta no pico</title>
+<meta name="description" content="Segurança no mar, etiqueta no pico e primeiros socorros para surfistas. Satélite do app ASF.">
 <style>
-:root{--rosa:#ff4d8d;--roxo:#7b2ff7;--areia:#fff5ec;--mar:#00c2cb}
+:root{--rosa:#e63970;--areia:#fff5ee;--mar:#0b6e6e;--escuro:#12303a}
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif}
-body{background:linear-gradient(160deg,#fff5ec,#ffe3f1 60%,#e0f7fa);min-height:100vh;color:#333}
-header{background:linear-gradient(90deg,var(--rosa),var(--roxo));color:#fff;padding:2rem 1rem;text-align:center}
-header h1{font-size:2rem} header p{opacity:.9;margin-top:.4rem}
-nav{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;padding:.8rem;background:#fff;box-shadow:0 2px 8px #0001;position:sticky;top:0;z-index:10}
-nav a{background:var(--areia);border:1px solid #ffd3e6;color:#c2185b;padding:.3rem .7rem;border-radius:20px;font-size:.78rem;text-decoration:none}
-nav a:hover{background:var(--rosa);color:#fff}
-main{max-width:760px;margin:1.5rem auto;padding:0 1rem}
-.card{background:#fff;border-radius:16px;padding:1.4rem;box-shadow:0 4px 16px #7b2ff720;margin-bottom:1.2rem}
-.card h2{color:var(--roxo);margin-bottom:.6rem;font-size:1.2rem}
-button{background:linear-gradient(90deg,var(--rosa),var(--roxo));color:#fff;border:none;padding:.6rem 1.2rem;border-radius:24px;font-size:1rem;cursor:pointer}
-button:hover{opacity:.85}
-input,select,textarea{padding:.5rem;border:1px solid #ddd;border-radius:10px;width:100%;margin:.3rem 0;font-size:1rem}
-.xp{position:fixed;bottom:1rem;right:1rem;background:#fff;border:2px solid var(--rosa);border-radius:24px;padding:.4rem 1rem;font-weight:bold;color:var(--roxo);box-shadow:0 4px 12px #0002}
-footer{text-align:center;padding:2rem;font-size:.8rem;color:#888}
+body{background:var(--areia);color:var(--escuro)}
+header{background:linear-gradient(135deg,#d7263d,#ff7b54);color:#fff;padding:2.5rem 1rem;text-align:center}
+header h1{font-size:2.2rem}header p{opacity:.95;margin-top:.5rem}
+nav{background:var(--escuro);display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem;padding:.5rem;position:sticky;top:0;z-index:10}
+nav a{color:#fff;text-decoration:none;padding:.5rem .8rem;border-radius:.5rem;font-size:.9rem}
+nav a:hover,nav a.ativo{background:var(--rosa)}
+main{max-width:900px;margin:0 auto;padding:2rem 1rem}
+.card{background:#fff;border-radius:1rem;padding:1.5rem;margin-bottom:1.5rem;box-shadow:0 2px 10px rgba(0,0,0,.07)}
+.card h2{color:#d7263d;margin-bottom:.6rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.mini{background:var(--areia);border-radius:.75rem;padding:1rem}
+.mini h3{color:var(--mar);font-size:1rem;margin-bottom:.4rem}
+.alerta{background:#fff3cd;border-left:4px solid #d7263d;border-radius:.5rem;padding:1rem;margin-top:1rem}
+footer{background:var(--escuro);color:#cfe;padding:1.5rem;text-align:center;font-size:.85rem;margin-top:2rem}
+footer a{color:#ff9ec0}
+.cta{display:inline-block;background:var(--mar);color:#fff;padding:.7rem 1.4rem;border-radius:2rem;text-decoration:none;margin-top:.8rem}
 </style>
 </head>
 <body>
 <header><h1>🛟 ASF Segurança</h1><p>Segurança no mar, etiqueta no pico e primeiros socorros</p></header>
-<nav><a href="https://acarolmourad-commits.github.io/asf-app/">🏄‍♀️ ASF App</a>
-<a href="https://acarolmourad-commits.github.io/asf-praias/">Praias</a>
-<a href="https://acarolmourad-commits.github.io/asf-previsao/">Previsao</a>
-<a href="https://acarolmourad-commits.github.io/asf-treino/">Treino</a>
-<a href="https://acarolmourad-commits.github.io/asf-eventos/">Eventos</a>
-<a href="https://acarolmourad-commits.github.io/asf-glossario/">Glossario</a>
-<a href="https://acarolmourad-commits.github.io/asf-comunidade/">Comunidade</a>
-<a href="https://acarolmourad-commits.github.io/asf-equipamento/">Equipamento</a>
-<a href="https://acarolmourad-commits.github.io/asf-quiz/">Quiz</a>
-<a href="https://acarolmourad-commits.github.io/asf-nutricao/">Nutricao</a>
-<a href="https://acarolmourad-commits.github.io/asf-historia/">Historia</a>
-<a href="https://acarolmourad-commits.github.io/asf-viagens/">Viagens</a>
-<a href="https://acarolmourad-commits.github.io/asf-bemestar/">Bemestar</a>
-<a href="https://acarolmourad-commits.github.io/asf-diario/">Diario</a>
-<a href="https://acarolmourad-commits.github.io/asf-eco/">Eco</a>
-<a href="https://acarolmourad-commits.github.io/asf-kids/">Kids</a>
-<a href="https://acarolmourad-commits.github.io/asf-mental/">Mental</a>
-<a href="https://acarolmourad-commits.github.io/asf-ranking/">Ranking</a>
-<a href="https://acarolmourad-commits.github.io/asf-respira/">Respira</a>
-<a href="https://acarolmourad-commits.github.io/asf-sos/">Sos</a>
-<a href="https://acarolmourad-commits.github.io/asf-volume/">Volume</a>
-<a href="https://acarolmourad-commits.github.io/asf-yoga/">Yoga</a></nav>
+<nav>
+<a href="https://acarolmourad-commits.github.io/asf-app/">🏄‍♀️ App ASF</a>
+<a href="https://acarolmourad-commits.github.io/asf-praias/">🏖️ Praias</a>
+<a href="https://acarolmourad-commits.github.io/asf-previsao/">🌊 Previsão</a>
+<a href="https://acarolmourad-commits.github.io/asf-treino/">💪 Treino</a>
+<a href="https://acarolmourad-commits.github.io/asf-eventos/">📅 Eventos</a>
+<a href="https://acarolmourad-commits.github.io/asf-glossario/">📖 Glossário</a>
+<a href="https://acarolmourad-commits.github.io/asf-comunidade/">🌸 Comunidade</a>
+<a class="ativo" href="https://acarolmourad-commits.github.io/asf-seguranca/">🛟 Segurança</a>
+<a href="https://acarolmourad-commits.github.io/asf-equipamento/">🏄 Equipamento</a>
+<a href="https://acarolmourad-commits.github.io/asf-quiz/">❓ Quiz</a>
+<a href="https://acarolmourad-commits.github.io/asf-diario/">📝 Diário</a>
+<a href="https://acarolmourad-commits.github.io/asf-yoga/">🧘‍♀️ Yoga</a>
+<a href="https://acarolmourad-commits.github.io/asf-sos/">🆘 SOS</a>
+<a href="https://acarolmourad-commits.github.io/asf-eco/">🌱 Eco</a>
+</nav>
 <main>
-<div class="card"><h2>🚦 Teste rápido: você entra no mar?</h2>
-<label>Bandeira dos salva-vidas</label><select id="b"><option>Verde</option><option>Amarela</option><option>Vermelha</option></select>
-<label>Corrente de retorno visível?</label><select id="c"><option>Não</option><option>Sim</option></select>
-<button onclick="check()">Verificar</button><h3 id="r" style="margin-top:.6rem"></h3></div>
-<div class="card"><h2>🤙 Etiqueta no Pico</h2><ol><li>Prioridade: quem está mais no pico</li><li>Não dropar a onda dos outros</li><li>Segure sua prancha (não solte no impacto)</li><li>Peça desculpas, sorria, respeite as locais</li><li>Ajude quem está em dificuldade</li></ol></div>
-<div class="card"><p>Em emergência use o <a href='https://acarolmourad-commits.github.io/asf-sos/'>ASF SOS</a>. Aprenda os termos no <a href='https://acarolmourad-commits.github.io/asf-glossario/'>ASF Glossário</a>.</p></div>
-<div class="card"><h2>🌐 Ecossistema ASF</h2><p>Este app faz parte da constelação ASF — Associação de Surf Feminino. Ganhe XP aqui e veja seu progresso no <a href="https://acarolmourad-commits.github.io/asf-ranking/">ASF Ranking</a>. App principal: <a href="https://acarolmourad-commits.github.io/asf-app/">ASF App</a>.</p></div>
+<div class="card"><h2>Surfe com segurança 🌊</h2><p>Antes de entrar no mar, sempre confira a <a href="https://acarolmourad-commits.github.io/asf-previsao/">Previsão de ondas, vento e maré</a> e escolha o pico certo no guia de <a href="https://acarolmourad-commits.github.io/asf-praias/">Praias</a>. Em emergência, use o <a href="https://acarolmourad-commits.github.io/asf-sos/">ASF SOS</a>.</p><a class="cta" href="https://acarolmourad-commits.github.io/asf-app/">Abrir o App ASF</a></div>
+<div class="card"><h2>Regras de prioridade (etiqueta no pico)</h2><div class="grid">
+<div class="mini"><h3>Prioridade do inside</h3><p>A surfista mais próxima do pico (por onde a onda quebra) tem preferência.</p></div>
+<div class="mini"><h3>Não derrape (drop in)</h3><p>Nunca dropar na frente de quem já está na onda.</p></div>
+<div class="mini"><h3>Segure sua prancha</h3><p>Não abandone a prancha na volta — mergulhe pato ou tartaruga.</p></div>
+</div></div>
+<div class="card"><h2>Segurança no mar</h2><div class="grid">
+<div class="mini"><h3>Corrente de retorno</h3><p>Não lute contra: nade paralelo à praia até sair da corrente.</p></div>
+<div class="mini"><h3>Conheça seus limites</h3><p>Comece em ondas pequenas e evolua com os <a href="https://acarolmourad-commits.github.io/asf-treino/">treinos ASF</a>.</p></div>
+<div class="mini"><h3>Nunca surfe sozinha</h3><p>Leve uma parceira da <a href="https://acarolmourad-commits.github.io/asf-comunidade/">Comunidade ASF</a>.</p></div>
+</div>
+<div class="alerta"><strong>⚠️ Emergência:</strong> Corpo de Bombeiros — 193 · SAMU — 192. Sinalize levantando um braço e aguarde socorro sem se desesperar.</div></div>
 </main>
-<div class="xp">⭐ XP: <span id="xp">0</span></div>
-<footer>ASF — Associação de Surf Feminino · Feito com 🌊 e 💜 · <a href="https://acarolmourad-commits.github.io/asf-app/">asf-app</a></footer>
+<footer>Parte do ecossistema <a href="https://acarolmourad-commits.github.io/asf-app/">ASF — Associação de Surf Feminino</a> · Publicado via GitHub Pages</footer>
+
+<!-- ASF Ecossistema Nav v2 (rede completa, 21 sites) -->
 <script>
-const XP=()=>parseInt(localStorage.getItem('asf_xp')||'0');
-function addXP(n){localStorage.setItem('asf_xp',XP()+n);document.getElementById('xp').textContent=XP();}
-document.getElementById('xp').textContent=XP();
-window.check=()=>{const b=document.getElementById('b').value,c=document.getElementById('c').value;const r=document.getElementById('r');if(b==='Vermelha'||c==='Sim'){r.textContent='🚫 Não entre. Espere condições melhores ou escolha outro pico.';r.style.color='#e53935';}else if(b==='Amarela'){r.textContent='⚠️ Entre com cautela, perto da beira e com companhia.';r.style.color='#f9a825';}else{r.textContent='✅ Condições ok! Aqueça e boa sessão 🌊';r.style.color='#43a047';}addXP(5);};
+(function(){
+  function injectNav(){
+    if(document.querySelector('.asf-sat-nav'))return;
+    var old=document.querySelector('.asf-rede-nav');if(old)old.remove();
+    var sites=[["asf-app","\u{1F30A} App"],["asf-praias","\u{1F3D6}\uFE0F Praias"],["asf-previsao","\u{1F4C8} Previs\u00E3o"],["asf-treino","\u{1F3CB}\uFE0F Treino"],["asf-eventos","\u{1F4C5} Eventos"],["asf-glossario","\u{1F4D6} Gloss\u00E1rio"],["asf-comunidade","\u{1F4AC} Comunidade"],["asf-seguranca","\u{1F6FA} Seguran\u00E7a"],["asf-equipamento","\u{1F3C4}\u200D\u2640\uFE0F Equipamento"],["asf-quiz","\u{1F9E0} Quiz"],["asf-nutricao","\u{1F957} Nutri\u00E7\u00E3o"],["asf-viagens","\u{2708}\uFE0F Viagens"],["asf-historia","\u{1F3C6} Hist\u00F3ria"],["asf-bemestar","\u{1F9D8}\u200D\u2640\uFE0F Bem-estar"],["asf-ranking","\u{1F947} Ranking"],["asf-diario","\u{1F4D3} Di\u00E1rio"],["asf-respira","\u{1FAC1} Respira"],["asf-volume","\u{1F4D0} Volume"],["asf-yoga","\u{1F9D8} Yoga"],["asf-sos","\u{1F198} SOS"],["asf-eco","\u{1F331} Eco"]];
+    var nav=document.createElement('nav');
+    nav.className='asf-sat-nav';
+    nav.setAttribute('aria-label','Ecossistema ASF');
+    nav.style.cssText='background:linear-gradient(135deg,#0ea5e9,#6366f1);padding:.6rem 1rem;display:flex;flex-wrap:wrap;gap:.35rem;justify-content:center;position:sticky;top:0;z-index:10000;';
+    sites.forEach(function(s){
+      var a=document.createElement('a');
+      a.href='https://acarolmourad-commits.github.io/'+s[0]+'/';
+      a.textContent=s[1];
+      a.style.cssText='color:#e0f2fe;text-decoration:none;font-weight:600;font-size:.75rem;padding:.28rem .55rem;border-radius:999px;background:rgba(255,255,255,.12);font-family:inherit;';
+      a.onmouseover=function(){a.style.background='rgba(255,255,255,.35)';};
+      a.onmouseout=function(){a.style.background='rgba(255,255,255,.12)';};
+      nav.appendChild(a);
+    });
+    document.body.insertBefore(nav,document.body.firstChild);
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',injectNav);}else{injectNav();}
+})();
 </script>
 </body>
 </html>
