@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://acarolmourad-commits.github.io/asf-seguranca/sitemap.xml
+Sitemap: https://seguranca.asf.surf/sitemap.xml
