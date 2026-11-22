@@ -21,6 +21,8 @@ main{max-width:900px;margin:0 auto;padding:2rem 1rem}
 .mini{background:var(--areia);border-radius:.75rem;padding:1rem}
 .mini h3{color:var(--mar);font-size:1rem;margin-bottom:.4rem}
 .alerta{background:#fff3cd;border-left:4px solid #d7263d;border-radius:.5rem;padding:1rem;margin-top:1rem}
+.emergency-number{display:inline-block;padding:.1rem .2rem;min-height:24px;color:#12303a;font-weight:700;text-decoration:underline}
+.emergency-number:focus-visible{outline:3px solid #12303a!important;outline-offset:2px!important}
 .check li{margin:.35rem 0 .35rem 1.2rem}
 footer{background:var(--escuro);color:#cfe;padding:1.5rem;text-align:center;font-size:.85rem;margin-top:2rem}
 footer a{color:#ff9ec0}
@@ -66,7 +68,7 @@ footer{color:#69758a!important;border-top:1px solid var(--asf-line)!important;pa
 <header><h1>🛟 ASF Segurança</h1><p>Segurança no mar, etiqueta no pico e primeiros socorros</p></header>
 
 <main>
-<div class="card"><h2>Surfe com segurança 🌊</h2><p>Antes de entrar no mar, sempre confira a <a href="https://acarolmourad-commits.github.io/asf-previsao/">Previsão de ondas, vento e maré</a> e escolha o pico certo no guia de <a href="https://acarolmourad-commits.github.io/asf-praias/">Praias</a>. Em emergência, use o <a href="https://acarolmourad-commits.github.io/asf-sos/">ASF SOS</a>.</p><a class="cta" href="https://acarolmourad-commits.github.io/asf-app/">Abrir o App ASF</a></div>
+<div class="card"><h2>Surfe com segurança 🌊</h2><p>Antes de entrar no mar, sempre confira a <a href="https://acarolmourad-commits.github.io/asf-previsao/">Previsão de ondas, vento e maré</a> e escolha o pico certo no guia de <a href="https://acarolmourad-commits.github.io/asf-praias/">Praias</a>. <strong>Em emergência, ligue:</strong> <a class="emergency-number" href="tel:193">Bombeiros 193</a> ou <a class="emergency-number" href="tel:192">SAMU 192</a>. O <a href="https://acarolmourad-commits.github.io/asf-sos/">ASF SOS</a> reúne orientações adicionais.</p><a class="cta" href="https://acarolmourad-commits.github.io/asf-app/">Abrir o App ASF</a></div>
 <div class="card"><h2>Regras de prioridade (etiqueta no pico)</h2><div class="grid">
 <div class="mini"><h3>Prioridade do inside</h3><p>A surfista mais próxima do pico (por onde a onda quebra) tem preferência.</p></div>
 <div class="mini"><h3>Não rabeie (drop in)</h3><p>Nunca dropar na frente de quem já está na onda.</p></div>
@@ -77,7 +79,7 @@ footer{color:#69758a!important;border-top:1px solid var(--asf-line)!important;pa
 <div class="mini"><h3>Conheça seus limites</h3><p>Comece em ondas pequenas e evolua com os <a href="https://acarolmourad-commits.github.io/asf-treino/">treinos ASF</a>.</p></div>
 <div class="mini"><h3>Nunca surfe sozinha</h3><p>Leve uma parceira da <a href="https://acarolmourad-commits.github.io/asf-comunidade/">Comunidade ASF</a>.</p></div>
 </div>
-<div class="alerta"><strong>⚠️ Emergência:</strong> Corpo de Bombeiros — 193 · SAMU — 192. Sinalize levantando um braço e aguarde socorro sem se desesperar.</div></div>
+<div class="alerta"><strong>⚠️ Emergência:</strong> <a class="emergency-number" href="tel:193">Bombeiros 193</a> · <a class="emergency-number" href="tel:192">SAMU 192</a>. Sinalize levantando um braço e aguarde socorro sem se desesperar.</div></div>
 <div class="card"><h2>✋ Sinais de comunicação no mar</h2><p>Com o barulho das ondas e a distância, falar nem sempre funciona. Combine esses sinais com suas parceiras de surf <b>antes</b> de entrar no mar — e aprenda os universais, usados por salva-vidas e surfistas no mundo inteiro:</p><div class="grid" style="margin-top:.8rem">
 <div class="mini"><h3>👍 Polegar para cima</h3><p>"Estou bem!" Responda com o mesmo sinal quando perguntarem se você está ok depois de uma queda.</p></div>
 <div class="mini"><h3>✋ Um braço erguido (mão aberta)</h3><p>"Preciso de ajuda" — sinal universal de socorro. Mantenha o braço no alto e aguarde, sem se debater.</p></div>
@@ -118,8 +120,12 @@ footer{color:#69758a!important;border-top:1px solid var(--asf-line)!important;pa
 <div class="mini"><h3>Cortes de quilha ou reef</h3><p>Saia da água, lave com água limpa (não use água do mar), pressione com pano limpo para estancar. Corte profundo ou no rosto? Direto para o pronto-socorro — pode precisar de pontos.</p></div>
 <div class="mini"><h3>Pancada com a prancha</h3><p>Gelo enrolado em toalha por 15–20min. Na cabeça: observe tontura, náusea ou sonolência nas próximas 24h — qualquer sinal, procure atendimento.</p></div>
 <div class="mini"><h3>Torneozelo / luxação</h3><p>Não tente "colocar no lugar". Imobilize, gelo, eleve o membro e procure atendimento médico.</p></div>
-<div class="mini"><h3>Engolir água / quase afogamento</h3><p>Deite a pessoa de lado, mantenha-a aquecida e calma. Mesmo que pareça bem, avaliação médica é obrigatória — a inalação de água pode causar complicações horas depois.</p></div>
-<div class="mini"><h3>Insolação / exaustão de calor</h3><p>Pele quente e seca, confusão mental: sombra, água, panos frios no pescoço e virilha, e socorro médico se houver confusão ou desmaio.</p></div>
+<div class="mini" id="afogamento"><h3>Suspeita de afogamento</h3>
+<p><strong>Chame os guarda-vidas e ligue para os <a class="emergency-number" href="tel:193">Bombeiros 193</a> imediatamente.</strong> Não entre na água para tentar resgatar.</p>
+<p>Quando a pessoa estiver fora da água, verifique se ela responde e se respira normalmente. Informe ao atendente o que observou, especialmente se ela não responde ou não respira normalmente, e siga as instruções. Mesmo que pareça recuperada após o afogamento, procure avaliação médica.</p></div>
+<div class="mini" id="calor-intenso"><h3>Calor intenso com sinais graves</h3>
+<p><strong>Se houver confusão, desmaio ou convulsões após exposição ao calor, ligue para o <a class="emergency-number" href="tel:192">SAMU 192</a> imediatamente.</strong></p>
+<p>Não atrase o chamado para resfriar a pessoa. Enquanto aguarda, leve-a para um local fresco e ventilado se for seguro e use panos molhados e frios para ajudar a resfriá-la. Não ofereça líquidos se ela estiver confusa, sonolenta ou inconsciente. Siga as instruções do atendente.</p></div>
 <div class="mini"><h3>Hipotermia (mar frio)</h3><p>Tremedeira intensa que não para, fala enrolada: tire a roupa molhada, aqueça aos poucos, bebida quente (sem álcool) e procure atendimento se os sintomas persistirem.</p></div>
 </div>
 <div class="alerta"><strong>🩸 Regra de ouro:</strong> na dúvida, procure atendimento médico. E avise sempre alguém na praia — surfar em grupo salva vidas.</div></div>
